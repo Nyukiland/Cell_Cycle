@@ -53,7 +53,7 @@ public class ShadowRaycast : MonoBehaviour
             RaycastHit cameraHit;
             if (Physics.Raycast(cameraRay, out cameraHit, Mathf.Infinity, layerScene))
             {
-                Debug.DrawRay(cameraRay.origin, cameraHit.point - cameraRay.origin, Color.red);
+                //Debug.DrawRay(cameraRay.origin, cameraHit.point - cameraRay.origin, Color.red);
 
                 //Draw Raycast from sphere to light
                 Vector3 direction = -Vector3.forward;
@@ -68,7 +68,7 @@ public class ShadowRaycast : MonoBehaviour
                 RaycastHit lightHit;
                 if (Physics.Raycast(lightRay, out lightHit, Mathf.Infinity, layerScene))
                 {
-                    Debug.DrawRay(lightRay.origin, lightHit.point - lightRay.origin, Color.green);
+                    //Debug.DrawRay(lightRay.origin, lightHit.point - lightRay.origin, Color.green);
                     if (Input.GetAxis("Mouse X") != 0 || Input.GetAxis("Mouse Y") != 0)
                     {
                         // Check if both raycasts are not touching the same point

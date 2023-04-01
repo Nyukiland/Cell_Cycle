@@ -23,7 +23,7 @@ public class DestroyIfLight : MonoBehaviour
         RaycastHit lightHit;
         if (Physics.Raycast(lightRay, out lightHit, Mathf.Infinity))
         {
-            Debug.DrawRay(lightRay.origin, lightHit.point - lightRay.origin, Color.yellow);
+            //Debug.DrawRay(lightRay.origin, lightHit.point - lightRay.origin, Color.yellow);
 
         }
         else
