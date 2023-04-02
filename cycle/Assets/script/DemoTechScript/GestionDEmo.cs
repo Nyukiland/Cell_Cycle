@@ -93,7 +93,7 @@ public class GestionDEmo : MonoBehaviour
             cube.SetActive(false);
         }
 
-        if (Input.GetButtonDown("Restart"))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(0);
         }
